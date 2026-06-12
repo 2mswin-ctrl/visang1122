@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보를 전달하는 글 쓰기 - 너비아니 소개하기</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght=300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white text-teal-700 p-2 rounded-lg font-bold shadow-inner">
+                    <i class="fa-solid fa-pen-nib text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight">국어 1-1 ② 정보를 판단하는 힘</h1>
+                    <p class="text-xs text-emerald-100 font-light">02. 정보를 전달하는 글 쓰기 (비상교육 박현숙)</p>
+                </div>
+            </div>
+            <nav class="flex space-x-2 text-sm">
+                <button onclick="scrollToSection('intro')" class="hover:bg-emerald-500/30 px-3 py-1.5 rounded-md transition duration-200">단원 소개</button>
+                <button onclick="scrollToSection('process')" class="hover:bg-emerald-500/30 px-3 py-1.5 rounded-md transition duration-200">글쓰기 단계</button>
+                <button onclick="scrollToSection('article-preview')" class="hover:bg-emerald-500/30 px-3 py-1.5 rounded-md transition duration-200">최종 글 보기</button>
+                <button onclick="scrollToSection('quiz-section')" class="bg-amber-500 hover:bg-amber-600 px-3 py-1.5 rounded-md font-semibold text-white transition duration-200 shadow">평가 및 시험</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8 space-y-12">
+
+        <!-- Section 1: Intro Card -->
+        <section id="intro" class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 flex flex-col md:flex-row gap-8 items-center">
+            <div class="flex-1 space-y-4">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> 단원 핵심 가이드
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-snug">
+                    어떠한 정보를 고르고, <br class="hidden sm:inline">어떻게 효과적으로 전달해야 할까?
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                    우리는 매일 수많은 정보를 접합니다. 정보를 전달하는 글을 쓸 때에는 <strong>읽는 사람(예상 독자)에게 꼭 필요한 정보</strong>를, 
+                    도표·그림·사진 등의 시각 자료와 통합하여 <strong>가장 효과적이고 왜곡 없는 사실 위주로 전달</strong>하는 것이 핵심입니다.
+                </p>
+                <div class="grid grid-cols-2 gap-3 pt-2">
+                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <p class="text-xs text-slate-400">학습 목표 1</p>
+                        <p class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">다양한 자료에서 필요 정보를 선별하여 구조화하기</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <p class="text-xs text-slate-400">학습 목표 2</p>
+                        <p class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">시각·영상 자료를 통합하여 한 편의 설명하는 글 쓰기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-80 bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-2xl border border-emerald-100 flex flex-col justify-between self-stretch">
+                <div>
+                    <h3 class="font-bold text-teal-800 text-lg mb-2"><i class="fa-solid fa-user-pen mr-1"></i> 오늘의 학생기자</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        전통 요리 동아리 부원이자 학생 기자인 <strong>서연이</strong>와 함께 학교 소식지 <span class="text-emerald-700 font-semibold">‘한국 문화의 힘’</span>에 실을 너비아니 소개 글을 작성해보아요!
+                    </p>
+                </div>
+                <div class="bg-white p-3 rounded-xl border border-emerald-100 flex items-center space-x-3 shadow-sm">
+                    <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold text-sm">서연</div>
+                    <div>
+                        <p class="text-xs text-slate-400">글쓰기 과제</p>
+                        <p class="text-xs font-semibold text-slate-700">전통 음식 '너비아니' 소개 글</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Process -->
+        <section id="process" class="space-y-6">
+            <div class="text-center space-y-2">
+                <h3 class="text-2xl font-extrabold text-slate-900"><i class="fa-solid fa-arrows-spin text-teal-600 mr-2"></i>글 쓰기 단계별 자료 창고</h3>
+                <p class="text-slate-500 text-sm">글쓰기 각 단계를 따라가며 카드를 클릭해 수집한 생생한 자료(팝업)를 확인하세요.</p>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <!-- Step 1 -->
+                <div onclick="openModal('modal-plan')" class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-emerald-400 shadow-sm hover:shadow-md transition duration-300 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">1단계</span>
+                            <span class="text-slate-300 group-hover:text-emerald-500 transition"><i class="fa-solid fa-circle-info text-lg"></i></span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition mb-2">계획하기</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">독자, 목적, 주제를 선정한 뒤 글의 방향과 종류를 설정합니다.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-emerald-600">
+                        계획서 확인하기 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div onclick="openModal('modal-collect')" class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-teal-400 shadow-sm hover:shadow-md transition duration-300 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2 py-1 rounded">2단계</span>
+                            <span class="text-slate-300 group-hover:text-teal-500 transition"><i class="fa-solid fa-magnifying-glass text-lg"></i></span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 group-hover:text-teal-600 transition mb-2">자료 수집하기</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">사전, 서적, 설문조사 등 다양한 매체를 활용해 정보를 모읍니다.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-teal-600">
+                        수집한 4개 자료 보기 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div onclick="openModal('modal-organize')" class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-cyan-400 shadow-sm hover:shadow-md transition duration-300 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-cyan-600 bg-cyan-50 px-2 py-1 rounded">3단계</span>
+                            <span class="text-slate-300 group-hover:text-cyan-500 transition"><i class="fa-solid fa-sitemap text-lg"></i></span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 group-hover:text-cyan-600 transition mb-2">내용 조직하기</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">수집된 정보의 중요도를 판단해 뺄 것은 빼고 개요를 만듭니다.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-cyan-600">
+                        글의 구성 개요표 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div onclick="openModal('modal-write')" class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-indigo-400 shadow-sm hover:shadow-md transition duration-300 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">4단계</span>
+                            <span class="text-slate-300 group-hover:text-indigo-500 transition"><i class="fa-solid fa-pen text-lg"></i></span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition mb-2">글 쓰기 (표현)</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">독자의 흥미를 유발하며 객관적 사실과 시각적 자료를 결합합니다.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-indigo-600">
+                        글 쓰기 핵심 전략 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div onclick="openModal('modal-revise')" class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-rose-400 shadow-sm hover:shadow-md transition duration-300 cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-1 rounded">5단계</span>
+                            <span class="text-slate-300 group-hover:text-rose-500 transition"><i class="fa-solid fa-check-double text-lg"></i></span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 group-hover:text-rose-600 transition mb-2">고쳐쓰기</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">오탈자 교정, 문맥 점검, 독자의 관심을 끄는 제목으로 수정합니다.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-rose-600">
+                        수정 전후 대비 분석 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Final Written Article -->
+        <section id="article-preview" class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
+            <div class="bg-slate-900 text-white p-5 sm:p-6 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                    <span class="text-xs text-slate-400 ml-2 font-mono">school_newsletter_v1.md</span>
+                </div>
+                <div class="flex items-center space-x-1 text-xs text-slate-400">
+                    <span class="bg-slate-800 px-2.5 py-1 rounded text-emerald-400 font-semibold">설명하는 글 (설명문)</span>
+                </div>
+            </div>
+            
+            <div class="p-6 sm:p-10 space-y-8">
+                <!-- Title Header -->
+                <div class="text-center space-y-3 pb-6 border-b border-dashed border-slate-200">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900">은은한 전통의 맛, 너도 아니? 너비아니</h2>
+                    <p class="text-sm text-slate-500 font-medium">글: 학생기자 서연 (전통 요리 동아리)</p>
+                </div>
+
+                <!-- Intro Section -->
+                <div class="space-y-4">
+                    <p class="text-slate-700 leading-relaxed indent-4">
+                        최근 김치, 비빔밥 등 우리 음식이 전 세계인의 많은 관심을 받고 있다. 그렇다면 우리 학교 학생들은 한국의 전통 음식에 대해 얼마나 잘 알고 있을까? 지난 5월 12일부터 사흘 동안 우리 학교 학생 100명을 대상으로 설문 조사를 한 결과, 김치(98%), 비빔밥(95%)의 인지도는 무척 높게 나타났다. 반면, 맛과 영양이 풍부한 또 다른 전통 음식인 <strong class="text-teal-700 font-semibold">‘너비아니’에 대해서는 겨우 28%의 학생만이 알고 있다고 답했다.</strong> 이에 우리 전통 음식의 가치를 되새겨 보고자 학생들이 잘 모르는 너비아니에 대해 소개하고자 한다.
+                    </p>
+                    <!-- Small embedded chart info block -->
+                    <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl flex flex-col sm:flex-row items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold shrink-0">
+                            <i class="fa-solid fa-chart-pie text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-semibold text-amber-800">통합된 시각 자료 (설문조사 결과)</h4>
+                            <p class="text-xs text-slate-600 mt-0.5">너비아니 인지도는 28%에 불과하여, 이 글을 쓰게 된 실질적인 까닭이자 독자의 관심을 불러일으키는 근거가 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Body Section 1: Origin -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold text-slate-900 flex items-center"><span class="w-1.5 h-5 bg-teal-600 rounded-full mr-2"></span> 궁중에서 사랑받은 너비아니의 유래</h4>
+                    <p class="text-slate-700 leading-relaxed indent-4">
+                        너비아니는 소고기를 얇고 넓게 저며서 양념장에 재웠다가 석쇠에 구운 전통 음식으로, 오늘날 구워 먹는 불고기의 시초이다. 너비아니라는 이름은 고기를 너붓너붓하게 썰었다고 하여 붙여졌다. 조선 시대에는 궁중에서 즐겨 먹던 고급 음식이었으며, 궁궐 밖 일반 가정에서도 잔칫상에 올리는 귀한 대접 음식이었다. 조선 시대 조리서인 『시의전서』와 한글 조리서인 『음식디미방』 등 여러 역사서에도 조리 방법이 기록되어 있는 유서 깊은 음식이다.
+                    </p>
+                </div>
+
+                <!-- Body Section 2: Recipe -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold text-slate-900 flex items-center"><span class="w-1.5 h-5 bg-teal-600 rounded-full mr-2"></span> 정성을 담아 만드는 방법</h4>
+                    <p class="text-slate-700 leading-relaxed indent-4">
+                        너비아니를 만드는 방법은 정성이 가득 들어간다. 먼저 소고기의 연한 등심이나 안심을 얇고 넓게 썰어 고기 결과 반대 방향으로 잔칼집을 낸다. 칼집을 내면 고기가 부드러워지고 양념이 잘 밴다. 그다음 간장에 설탕, 다진 파와 마늘, 참기름, 깨소금, 후춧가루 등을 섞어 만든 양념장에 고기를 재워 둔다. 양념이 깊게 스며든 고기를 뜨겁게 달군 석쇠에 올려 센 불에서 겉을 얼른 익힌 뒤, 중불에서 속까지 골고루 구워 낸다.
+                    </p>
+                    
+                    <!-- 커스텀 플레이어 UI (차단 오류 해결책) -->
+                    <div class="bg-indigo-50 border border-indigo-100 p-5 rounded-2xl space-y-4">
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold shrink-0">
+                                    <i class="fa-brands fa-youtube text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-indigo-900">백종원의 요리비책 - 전통 너비아니 조리 영상</h4>
+                                    <p class="text-xs text-slate-500 mt-0.5">※ 외부 재생 차단으로 인해 아래 링크를 클릭하시면 공식 유튜브 앱/웹에서 끊김 없이 고화질로 즉시 재생됩니다.</p>
+                                </div>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=5PgtlyqeS6c" target="_blank" class="w-full sm:w-auto bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl flex items-center justify-center gap-2 transition duration-200 shadow-sm shrink-0">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> 유튜브에서 바로보기
+                            </a>
+                        </div>
+                        
+                        <!-- 모던 비디오 카드뉴스 스타일 카드 -->
+                        <a href="https://www.youtube.com/watch?v=5PgtlyqeS6c" target="_blank" class="block relative group overflow-hidden rounded-xl border border-indigo-200 aspect-video bg-slate-900 shadow-md">
+                            <!-- Background pattern/styling representing video cooking -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 flex flex-col justify-between p-6">
+                                <span class="bg-rose-600 text-white text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-full uppercase self-start shadow-sm"><i class="fa-solid fa-circle-play mr-1"></i> 레시피 동영상 자료</span>
+                                
+                                <div class="flex flex-col items-center justify-center self-center my-auto transition-transform group-hover:scale-110 duration-300">
+                                    <div class="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-rose-700 transition">
+                                        <i class="fa-solid fa-play text-2xl ml-1"></i>
+                                    </div>
+                                    <p class="text-white font-extrabold text-base mt-3 drop-shadow-md text-center">백종원의 너비아니 만드는 법</p>
+                                    <p class="text-rose-200 text-xs mt-1 font-light">클릭 시 유튜브 채널에서 동영상이 바로 재생됩니다.</p>
+                                </div>
+
+                                <div class="flex justify-between items-center text-slate-300 text-xs mt-auto">
+                                    <span><i class="fa-solid fa-user mr-1"></i> 백종원 PAIK JONG WON</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 10분 54초</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Body Section 3: Value -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-bold text-slate-900 flex items-center"><span class="w-1.5 h-5 bg-teal-600 rounded-full mr-2"></span> 너비아니의 영양학적 가치와 대중성</h4>
+                    <p class="text-slate-700 leading-relaxed indent-4">
+                        너비아니가 지금까지도 가치 있는 음식인 까닭은 무엇일까? 우선 너비아니는 다양한 영양소를 갖추고 있어 건강에 아주 좋다. 주재료인 소고기는 철분, 아연, 단백질 등을 풍부하게 함유하여 면역력을 강화하고 성장을 돕는다. 또한 피로 해소를 돕고 두뇌 활동을 촉진하는 비타민B도 듬뿍 담겨 있다. 게다가 남녀노소 누구나 즐기기 좋은 대중성도 갖추고 있다. 너비아니 양념은 맵지 않은 간장 베이스이기 때문에 매운 음식을 먹지 못하는 어린아이들이나 매운맛에 낯선 외국인들도 맛있게 먹을 수 있으며, 된장처럼 강한 향이 나지 않아 누구의 입맛에나 두루 잘 어울린다.
+                    </p>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3">
+                    <p class="text-slate-700 leading-relaxed font-medium italic text-center text-sm sm:text-base">
+                        "오랜 세월 동안 우리나라 사람들의 사랑을 받아 온 너비아니는 맛도 좋고 영양도 훌륭하며, 대중성까지 두루 갖춰 소중히 전해 나가야 할 우리 한식의 보물이다."
+                    </p>
+                    <p class="text-slate-700 leading-relaxed indent-4">
+                        오늘 저녁에는 패스트푸드 대신, 은은한 정성이 깃든 너비아니로 맛과 건강이라는 두 마리 토끼를 함께 잡아 보는 것은 어떨까?
+                    </p>
+                </div>
+
+                <!-- Sources / Footnotes -->
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-400 space-y-1">
+                    <p class="font-semibold text-slate-500">참고 자료 출처 (정확한 정보와 신뢰성 확보를 위해 명시)</p>
+                    <ul class="list-disc list-inside space-y-0.5 pl-1">
+                        <li>한국 민속 대백과 사전 (https://folkency.nfm.go.kr)</li>
+                        <li>한복려 외, 『음식 고전_옛 책에서 한국 음식의 뿌리를 찾다』, 2016.</li>
+                        <li>백종원 PAIK JONG WON 유튜브 채널 (너비아니 조리 영상)</li>
+                        <li>궁중 음식 문화 재단 누리집 (www.koreanroyalcuisine.org)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Assessment & Exam Center -->
+        <section id="quiz-section" class="bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-100 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-4 border-b border-slate-100">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500 text-white flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">단원 총정리 평가관</h3>
+                        <p class="text-xs text-slate-500">비상교육 중학 국어 1-1 단원 학습 진단 평가</p>
+                    </div>
+                </div>
+                
+                <!-- Tab Controls -->
+                <div class="flex bg-slate-100 p-1 rounded-xl w-full md:w-auto">
+                    <button id="tab-btn-quiz" onclick="switchQuizTab('quiz')" class="flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 bg-white text-slate-900 shadow">
+                        쪽지 시험 (3문항)
+                    </button>
+                    <button id="tab-btn-evaluate" onclick="switchQuizTab('evaluate')" class="flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 text-slate-500 hover:text-slate-800">
+                        소단원 평가 (10문항)
+                    </button>
+                </div>
+            </div>
+
+            <!-- TAB 1: 쪽지 시험 (3문항) -->
+            <div id="tab-content-quiz" class="space-y-6">
+                <!-- Q1 -->
+                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold mt-1">질문 1</span>
+                        <h4 class="font-bold text-slate-800">정보를 전달하는 설명문을 쓸 때에는 개인의 감정을 가미하여 주관적이고 화려하게 표현하는 것이 좋다?</h4>
+                    </div>
+                    <div class="flex space-x-4 pl-8">
+                        <button onclick="checkAnswer(1, 'X')" class="q-btn-1 flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-100 font-bold px-6 py-2.5 rounded-lg w-28 transition">
+                            <i class="fa-solid fa-circle-o text-emerald-500 mr-1 text-lg"></i> O (그렇다)
+                        </button>
+                        <button onclick="checkAnswer(1, 'O')" class="q-btn-1 flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-100 font-bold px-6 py-2.5 rounded-lg w-28 transition">
+                            <i class="fa-solid fa-xmark text-rose-500 mr-1 text-lg"></i> X (아니다)
+                        </button>
+                    </div>
+                    <p id="feedback-1" class="hidden text-sm font-semibold pl-8"></p>
+                </div>
+
+                <!-- Q2 -->
+                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold mt-1">질문 2</span>
+                        <h4 class="font-bold text-slate-800">서연이가 너비아니에 대한 인지도 조사 결과를 글의 첫 머리에 도표로 배치하여 보여 준 핵심 까닭은 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkAnswer(2, 'A')" class="q-btn-2 text-left bg-white border border-slate-300 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 너비아니 요리 방법을 시각적으로 더 쉽게 알려주기 위해
+                        </button>
+                        <button onclick="checkAnswer(2, 'B')" class="q-btn-2 text-left bg-white border border-slate-300 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-teal-800">
+                            ② 왜 전통 음식 중 잘 모르는 너비아니를 소개하는지 흥미와 필요성을 드러내기 위해
+                        </button>
+                        <button onclick="checkAnswer(2, 'C')" class="q-btn-2 text-left bg-white border border-slate-300 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 역사 기록 속에서 전통 음식이 어떻게 변했는지 나타내기 위해
+                        </button>
+                        <button onclick="checkAnswer(2, 'D')" class="q-btn-2 text-left bg-white border border-slate-300 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 수집한 설문 데이터가 많으므로 빠짐없이 모두 자랑하기 위해
+                        </button>
+                    </div>
+                    <p id="feedback-2" class="hidden text-sm font-semibold pl-8"></p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold mt-1">질문 3</span>
+                        <h4 class="font-bold text-slate-800">정보를 전달하는 글을 쓰다가 내용에 살이 덜 붙었거나, 자료가 부족하면 이전 단계(계획이나 수집)로 되돌아갈 수 있다?</h4>
+                    </div>
+                    <div class="flex space-x-4 pl-8">
+                        <button onclick="checkAnswer(3, 'O')" class="q-btn-3 flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-100 font-bold px-6 py-2.5 rounded-lg w-28 transition">
+                            <i class="fa-solid fa-circle-o text-emerald-500 mr-1 text-lg"></i> O (그렇다)
+                        </button>
+                        <button onclick="checkAnswer(3, 'X')" class="q-btn-3 flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-100 font-bold px-6 py-2.5 rounded-lg w-28 transition">
+                            <i class="fa-solid fa-xmark text-rose-500 mr-1 text-lg"></i> X (아니다)
+                        </button>
+                    </div>
+                    <p id="feedback-3" class="hidden text-sm font-semibold pl-8"></p>
+                </div>
+            </div>
+
+            <!-- TAB 2: 소단원 평가 (10문항) -->
+            <div id="tab-content-evaluate" class="space-y-6 hidden">
+                <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex items-center space-x-3 mb-4">
+                    <div class="text-emerald-700 text-xl"><i class="fa-solid fa-circle-question"></i></div>
+                    <p class="text-xs text-emerald-800 leading-relaxed font-medium">
+                        <strong>[소단원 평가 ➊ 정보를 전달하는 글 쓰기]</strong> 학교 내신 평가 및 서술 핵심 평가 기출 문제를 모방한 객관식 10문항입니다. 학습 점검용으로 한 문항씩 꼼꼼히 풀어보세요.
+                    </p>
+                </div>
+
+                <!-- Eval Q1 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 1</span>
+                        <h4 class="font-bold text-slate-800">서연이가 정보를 전달하는 글을 쓰기 위해 '계획하기' 단계에서 설정한 요소로 적절하지 않은 것은 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(1, 'A')" class="eval-btn-1 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 글을 쓰는 목적 - 전통 음식 너비아니 소개
+                        </button>
+                        <button onclick="checkEvalAnswer(1, 'B')" class="eval-btn-1 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 예상 독자 - 학교 소식지를 읽는 학생들
+                        </button>
+                        <button onclick="checkEvalAnswer(1, 'C')" class="eval-btn-1 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ③ 글쓴이의 성격 - 요리 동아리에서의 나의 인간관계
+                        </button>
+                        <button onclick="checkEvalAnswer(1, 'D')" class="eval-btn-1 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 글의 종류 - 정보를 체계적으로 정리하여 보여주는 설명하는 글
+                        </button>
+                    </div>
+                    <p id="eval-feedback-1" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q2 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 2</span>
+                        <h4 class="font-bold text-slate-800">서연이가 수집한 여러 자료 중에서 '전통 음식 활성화 대책 마련 인터뷰' 자료를 글쓰기에 활용하지 않은 판단 기준은 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(2, 'A')" class="eval-btn-2 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ① 글의 주제 및 목적에 직접적으로 부합하지 않아서
+                        </button>
+                        <button onclick="checkEvalAnswer(2, 'B')" class="eval-btn-2 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 해당 자료가 시각 자료를 포함하고 있지 않아서
+                        </button>
+                        <button onclick="checkEvalAnswer(2, 'C')" class="eval-btn-2 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 설문 조사 결과와 완전히 상반된 내용을 나타내고 있어서
+                        </button>
+                        <button onclick="checkEvalAnswer(2, 'D')" class="eval-btn-2 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 신뢰할 만한 책이나 공식 누리집 출처가 아닌 가짜 정보여서
+                        </button>
+                    </div>
+                    <p id="eval-feedback-2" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q3 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 3</span>
+                        <h4 class="font-bold text-slate-800">글을 쓰기 전에 주요 내용을 의미적으로 묶고 질서정연하게 구조화하기 위해 작성하는 설계도를 무엇이라고 하나요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(3, 'A')" class="eval-btn-3 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 소감문
+                        </button>
+                        <button onclick="checkEvalAnswer(3, 'B')" class="eval-btn-3 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ② 개요표
+                        </button>
+                        <button onclick="checkEvalAnswer(3, 'C')" class="eval-btn-3 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 면담 질문지
+                        </button>
+                        <button onclick="checkEvalAnswer(3, 'D')" class="eval-btn-3 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 초고 원고
+                        </button>
+                    </div>
+                    <p id="eval-feedback-3" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q4 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 4</span>
+                        <h4 class="font-bold text-slate-800">설명문을 쓸 때 반드시 지켜야 하는 태도로 가장 올바른 설명은 무엇입니까?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(4, 'A')" class="eval-btn-4 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 글쓴이의 감동과 내면을 비유법을 써서 생생하게 묘사한다.
+                        </button>
+                        <button onclick="checkEvalAnswer(4, 'B')" class="eval-btn-4 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 독자의 흥미를 위해 일부 검증되지 않은 사실도 신비롭게 꾸며 쓴다.
+                        </button>
+                        <button onclick="checkEvalAnswer(4, 'C')" class="eval-btn-4 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ③ 주관적 편견을 배제하고 정확한 출처와 검증된 사실에 기반해 객관적으로 쓴다.
+                        </button>
+                        <button onclick="checkEvalAnswer(4, 'D')" class="eval-btn-4 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 남들이 전혀 모르는 단어를 임의로 만들어서 전문성을 과시한다.
+                        </button>
+                    </div>
+                    <p id="eval-feedback-4" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q5 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 5</span>
+                        <h4 class="font-bold text-slate-800">서연이가 글의 중간 부분에서 다루지 않은 정보는 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(5, 'A')" class="eval-btn-5 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 너비아니의 역사와 이름의 유래
+                        </button>
+                        <button onclick="checkEvalAnswer(5, 'B')" class="eval-btn-5 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 너비아니의 영양가와 대중성
+                        </button>
+                        <button onclick="checkEvalAnswer(5, 'C')" class="eval-btn-5 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 칼집 내기, 양념 재우기 등의 조리 순서
+                        </button>
+                        <button onclick="checkEvalAnswer(5, 'D')" class="eval-btn-5 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ④ 서양식 스테이크 요리와 너비아니의 맛 차이 시식기
+                        </button>
+                    </div>
+                    <p id="eval-feedback-5" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q6 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 6</span>
+                        <h4 class="font-bold text-slate-800">수집한 자료를 글에 활용할 때 출처를 반드시 명시해야 하는 가장 중요한 사회적 도덕적 이유는 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(6, 'A')" class="eval-btn-6 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 글을 가득 채워서 페이지 양이 많아 보이게 하려고
+                        </button>
+                        <button onclick="checkEvalAnswer(6, 'B')" class="eval-btn-6 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ② 정보의 신뢰성을 확보하고 원작자의 지식재산권을 존중하기 위해
+                        </button>
+                        <button onclick="checkEvalAnswer(6, 'C')" class="eval-btn-6 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 학교 교과서에 명시되어 단지 점수를 얻으려는 규칙이라서
+                        </button>
+                        <button onclick="checkEvalAnswer(6, 'D')" class="eval-btn-6 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 자신이 전통 요리에 직접 참여한 연구원임을 강조하려고
+                        </button>
+                    </div>
+                    <p id="eval-feedback-6" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q7 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 7</span>
+                        <h4 class="font-bold text-slate-800">서연이가 초고를 다 쓴 뒤 고쳐쓰기 단계에서 제목을 '전통 음식 너비아니를 소개합니다'에서 '은은한 전통의 맛, 너도 아니? 너비아니'로 수정한 주된 효과는 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(7, 'A')" class="eval-btn-7 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 설명하는 대상을 완벽하게 비밀로 가리기 위해
+                        </button>
+                        <button onclick="checkEvalAnswer(7, 'B')" class="eval-btn-7 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 글을 읽는 소요 시간을 획기적으로 줄여주기 위해
+                        </button>
+                        <button onclick="checkEvalAnswer(7, 'C')" class="eval-btn-7 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ③ 언어유희적 질문을 던짐으로써 독자의 재미와 흥미를 높이기 위해
+                        </button>
+                        <button onclick="checkEvalAnswer(7, 'D')" class="eval-btn-7 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 요리 연구가들에게 정식 조리 제안서로 검증을 받기 위해
+                        </button>
+                    </div>
+                    <p id="eval-feedback-7" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q8 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 8</span>
+                        <h4 class="font-bold text-slate-800">글로 이루어진 설명에 표, 그래프, 그림, 영상 등의 시각 및 동영상 자료를 통합하여 보여줄 때 생기는 이점은 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(8, 'A')" class="eval-btn-8 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ① 글을 읽는 예상 독자가 훨씬 쉽고 입체적으로 이해할 수 있게 돕는다.
+                        </button>
+                        <button onclick="checkEvalAnswer(8, 'B')" class="eval-btn-8 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 텍스트 작성의 번거로움을 생략하고 시각자료로만 때울 수 있다.
+                        </button>
+                        <button onclick="checkEvalAnswer(8, 'C')" class="eval-btn-8 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 글쓴이 마음대로 주관적인 정서를 마음껏 상상하게 만든다.
+                        </button>
+                        <button onclick="checkEvalAnswer(8, 'D')" class="eval-btn-8 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 인쇄 및 출판 비용을 완벽히 절약하는 경제적 효과가 있다.
+                        </button>
+                    </div>
+                    <p id="eval-feedback-8" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q9 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 9</span>
+                        <h4 class="font-bold text-slate-800">정보를 전달하는 글의 흐름을 조율할 때, 글을 쓰는 도중에라도 앞 단계로 되돌아가 계획을 점검하거나 보충 자료를 찾는 원리를 무엇이라 부르나요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(9, 'A')" class="eval-btn-9 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 글쓰기의 역사성
+                        </button>
+                        <button onclick="checkEvalAnswer(9, 'B')" class="eval-btn-9 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ② 글쓰기의 회귀성
+                        </button>
+                        <button onclick="checkEvalAnswer(9, 'C')" class="eval-btn-9 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ③ 글쓰기의 유용성
+                        </button>
+                        <button onclick="checkEvalAnswer(9, 'D')" class="eval-btn-9 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 글쓰기의 독립성
+                        </button>
+                    </div>
+                    <p id="eval-feedback-9" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+
+                <!-- Eval Q10 -->
+                <div class="space-y-3 bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+                    <div class="flex items-start space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold">문항 10</span>
+                        <h4 class="font-bold text-slate-800">전체 글의 짜임 중 ‘끝 부분’에서 설명하는 글쓴이의 행동으로 알맞지 않은 것은 무엇인가요?</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <button onclick="checkEvalAnswer(10, 'A')" class="eval-btn-10 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ① 앞에서 다룬 핵심 정보를 간략히 정리하고 요약한다.
+                        </button>
+                        <button onclick="checkEvalAnswer(10, 'B')" class="eval-btn-10 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ② 전통 음식 가치를 소중히 여겨 가자는 당부를 전한다.
+                        </button>
+                        <button onclick="checkEvalAnswer(10, 'C')" class="eval-btn-10 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition font-semibold text-rose-600">
+                            ③ 너비아니보다 맛있는 서양식 가공 치즈 요리법을 전적으로 권장한다.
+                        </button>
+                        <button onclick="checkEvalAnswer(10, 'D')" class="eval-btn-10 text-left bg-slate-50 border border-slate-200 hover:bg-slate-100 p-3 rounded-lg text-sm transition">
+                            ④ 정직한 글의 신뢰성을 지키기 위해 참고 자료들의 출처를 나열한다.
+                        </button>
+                    </div>
+                    <p id="eval-feedback-10" class="hidden text-sm font-semibold pl-8 mt-2"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-2 text-sm">
+            <p class="font-bold text-slate-300">비상교육 중학교 국어 1학년 1학기 - 교과 도우미</p>
+            <p class="text-xs text-slate-500">본 페이지는 중학교 국어 학습 목적을 위해 교과 평가 문제를 재가공하여 설계한 인터랙티브 교육 웹앱입니다.</p>
+        </div>
+    </footer>
+
+    <!-- ================== MODALS CONTAINER (Popups) ================== -->
+
+    <!-- Modal 1: Plan (계획하기) -->
+    <div id="modal-plan" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 flex flex-col max-h-[90vh]">
+            <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-list-check mr-2"></i>서연이의 글쓰기 계획서</h3>
+                <button onclick="closeModal('modal-plan')" class="text-white hover:text-emerald-200 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <p class="text-xs text-slate-400">글을 쓰기 전에 목적, 독자, 주제, 매체 등을 가장 먼저 고려합니다.</p>
+                
+                <div class="space-y-3">
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                        <span class="text-xs font-bold text-emerald-700 block mb-1">1. 글을 쓰는 목적</span>
+                        <p class="text-sm text-slate-700 font-medium">우리 학교 학생들에게 한국의 전통 음식인 '너비아니'를 올바르게 소개하기 위함.</p>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                        <span class="text-xs font-bold text-emerald-700 block mb-1">2. 예상 독자</span>
+                        <p class="text-sm text-slate-700 font-medium">우리 학교 학생들 (소식지를 주로 읽는 주독자층)</p>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                        <span class="text-xs font-bold text-emerald-700 block mb-1">3. 글의 제재 (소재)</span>
+                        <p class="text-sm text-slate-700 font-medium">한식 중에서 친구들이 이미 잘 알고 있는 김치 대신, 비교적 잘 모르는 전통 궁중 요리 '너비아니'</p>
+                    </div>
+                    <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                        <span class="text-xs font-bold text-emerald-700 block mb-1">4. 글의 종류</span>
+                        <p class="text-sm text-slate-700 font-medium">정보를 왜곡 없이 명확히 전달하는 <strong>설명문(설명하는 글)</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-100 flex justify-end">
+                <button onclick="closeModal('modal-plan')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition">확인 완료</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Collect (자료 수집하기) -->
+    <div id="modal-collect" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-100 flex flex-col max-h-[90vh]">
+            <div class="bg-gradient-to-r from-teal-600 to-teal-700 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-box-open mr-2"></i>서연이가 수집한 4가지 핵심 자료</h3>
+                <button onclick="closeModal('modal-collect')" class="text-white hover:text-teal-200 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 space-y-6 overflow-y-auto">
+                <p class="text-xs text-slate-400">인쇄 매체, 인터넷, 설문 조사 등 다양한 매체에서 수집한 정보들입니다. 탭하여 상세 내용을 확인하세요.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-normal">
+                    <!-- Data Card 1 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <span class="inline-block bg-teal-100 text-teal-800 text-[10px] font-bold px-2 py-0.5 rounded mb-2">자료 ① 설문조사 결과</span>
+                            <h4 class="font-bold text-sm text-slate-800 mb-1">교내 전통 음식 인지도 설문 조사</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                - 대상: 학교 학생 100명<br>
+                                - 결과: 김치(98%), 비빔밥(95%), <strong>너비아니(28%)</strong><br>
+                                <span class="text-teal-700 font-semibold">→ 글의 필요성 및 가치를 이끌어내는 기초 통계치로 활용!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Data Card 2 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <span class="inline-block bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded mb-2">자료 ② 국어사전 & 역사책</span>
+                            <h4 class="font-bold text-sm text-slate-800 mb-1">너비아니의 이름 어원과 유래</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                - 뜻: 고기를 '너붓너붓'하게 썰었다고 하여 붙여짐.<br>
+                                - 역사: 조선 시대 조리서 『시의전서』에 기록되어 있음. 궁중에서 즐겨 먹던 귀한 고급 음식.<br>
+                                <span class="text-emerald-700 font-semibold">→ 글의 '중간' 부분 유래 설명에 필수 활용!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Data Card 3 (임베드 차단 대응 커스텀 카드) -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between col-span-1 sm:col-span-2">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-start">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-[10px] font-bold px-2 py-0.5 rounded">자료 ③ 요리 전문 동영상</span>
+                                <span class="text-[11px] text-rose-600 font-semibold"><i class="fa-brands fa-youtube"></i> 유튜브 외부 이동</span>
+                            </div>
+                            <h4 class="font-bold text-sm text-slate-800 mb-1">백종원의 너비아니 조리 과정 동영상</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                - 소고기를 얇고 넓게 썰어 결 반대 방향으로 칼집 넣기<br>
+                                - 간장, 설탕, 다진 파/마늘, 참기름 등을 섞은 전용 양념에 재우기<br>
+                                - 센 불에서 겉을 빠르게 익힌 뒤 속까지 구워내기<br>
+                                <span class="text-indigo-700 font-semibold">→ 글로 배우는 요리법의 한계를 영상 통합 자료로 해결!</span>
+                            </p>
+                            
+                            <!-- Custom Link Card in Modal -->
+                            <a href="https://www.youtube.com/watch?v=5PgtlyqeS6c" target="_blank" class="block relative group overflow-hidden rounded-lg border border-indigo-200 aspect-video bg-slate-900 shadow-sm transition hover:border-indigo-400">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/10 flex flex-col justify-between p-4">
+                                    <span class="text-white text-[10px] font-semibold bg-rose-600/95 px-2 py-0.5 rounded self-start"><i class="fa-solid fa-play mr-1"></i> 동영상 보기 (새 창)</span>
+                                    <div class="flex flex-col items-center justify-center self-center my-auto transition-transform group-hover:scale-105 duration-200">
+                                        <div class="w-12 h-12 bg-rose-600 text-white rounded-full flex items-center justify-center shadow-md">
+                                            <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                                        </div>
+                                        <p class="text-white font-bold text-xs mt-2 text-center">백종원의 너비아니 레시피 ↗</p>
+                                    </div>
+                                    <span class="text-slate-300 text-[10px] self-end">Youtube에서 직접 재생하기</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Data Card 4 -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between col-span-1 sm:col-span-2">
+                        <div>
+                            <span class="inline-block bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded mb-2">자료 ④ 건강 잡지 뉴스</span>
+                            <h4 class="font-bold text-sm text-slate-800 mb-1">너비아니의 가치와 영양적 밸런스</h4>
+                            <p class="text-xs text-slate-500 leading-relaxed">
+                                - 영양: 소고기의 아연, 철분, 단백질 및 비타민B 풍부<br>
+                                - 대중성: 맵지 않은 간장 양념이어서 어린이, 외국인 모두 두루 맛있게 먹을 수 있음.<br>
+                                <span class="text-amber-700 font-semibold">→ 글의 후반부 가치 분석 파트에 핵심 근거 활용!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-100 flex justify-end">
+                <button onclick="closeModal('modal-collect')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition">확인 완료</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Organize (내용 조직하기) -->
+    <div id="modal-organize" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 flex flex-col max-h-[90vh]">
+            <div class="bg-gradient-to-r from-cyan-600 to-cyan-700 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-network-wired mr-2"></i>글의 뼈대 세우기 (개요 조직)</h3>
+                <button onclick="closeModal('modal-organize')" class="text-white hover:text-cyan-200 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <p class="text-xs text-slate-400">모든 정보를 무작정 나열하면 흐름이 깨집니다. <strong>처음-중간-끝</strong> 3단 구성을 기획합니다.</p>
+                
+                <div class="relative pl-6 border-l-2 border-cyan-500 space-y-5 py-2">
+                    <!-- Step line elements -->
+                    <div class="relative">
+                        <span class="absolute -left-[31px] top-0 bg-cyan-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">처</span>
+                        <h4 class="font-bold text-sm text-slate-800">처음 부분</h4>
+                        <p class="text-xs text-slate-500 mt-1">
+                            - 독자의 관심을 유도하기 위해 교내 한식 인지도 설문조사 결과 도표를 제시함.<br>
+                            - 너비아니 소개의 필요성을 밝힘.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-[31px] top-0 bg-cyan-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">중</span>
+                        <h4 class="font-bold text-sm text-slate-800">중간 부분 (핵심 내용)</h4>
+                        <p class="text-xs text-slate-500 mt-1">
+                            - <strong>정보 1:</strong> 이름의 유래와 조선 시대 기록 역사<br>
+                            - <strong>정보 2:</strong> 너비아니 만드는 순서와 양념 레시피 (동영상 연계)<br>
+                            - <strong>정보 3:</strong> 풍부한 영양소 분석 및 맵지 않은 대중성 가치
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-[31px] top-0 bg-cyan-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">끝</span>
+                        <h4 class="font-bold text-sm text-slate-800">끝 부분</h4>
+                        <p class="text-xs text-slate-500 mt-1">
+                            - 앞의 내용을 요약하며 가치 있는 전통 음식 보존 강조.<br>
+                            - 오늘 저녁 너비아니 먹어보기를 권유하며 여운 남기기.<br>
+                            - <strong>참고 문헌 및 정확한 출처 명시하기.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-100 flex justify-end">
+                <button onclick="closeModal('modal-organize')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition">확인 완료</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Write (글 쓰기 전략) -->
+    <div id="modal-write" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 flex flex-col max-h-[90vh]">
+            <div class="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-compass-drafting mr-2"></i>정보를 잘 전달하는 글쓰기 꿀팁</h3>
+                <button onclick="closeModal('modal-write')" class="text-white hover:text-indigo-200 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3">
+                        <div class="text-indigo-600 text-lg mt-0.5"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">객관성 유지하기</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">글쓴이 개인의 일방적 주장이나 과장된 미사여구는 빼고, 역사책이나 과학 기사 같은 객관적 사실 중심의 표현을 써요.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="text-indigo-600 text-lg mt-0.5"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">시각 자료 적극 활용하기</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">글로 길게 적는 것보다, 설문 결과 도표나 요리 순서 카드뉴스 그림 한 장을 같이 넣으면 훨씬 쉽게 이해할 수 있어요.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="text-indigo-600 text-lg mt-0.5"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">지식재산 및 저작권 존중</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">자료를 인용하거나 활용할 땐 글쓴이의 주관을 왜곡하지 않고, 맨 끝에 해당 사이트나 저서 등의 <strong>출처를 명백히 밝혀야</strong> 합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-100 flex justify-end">
+                <button onclick="closeModal('modal-write')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition">확인 완료</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Revise (고쳐쓰기) -->
+    <div id="modal-revise" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl border border-slate-100 flex flex-col max-h-[90vh]">
+            <div class="bg-gradient-to-r from-rose-600 to-rose-700 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-highlighter mr-2"></i>서연이의 초고 고쳐쓰기 (비교 분석)</h3>
+                <button onclick="closeModal('modal-revise')" class="text-white hover:text-rose-200 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="p-6 space-y-4 overflow-y-auto">
+                <p class="text-xs text-slate-400">초고 작성 이후, 교과 시험에 꼭 나오는 핵심 수정 부분을 짚어봅시다.</p>
+                
+                <div class="space-y-4">
+                    <div class="bg-rose-50 p-3.5 rounded-xl border border-rose-100">
+                        <span class="text-xs font-bold text-rose-800 bg-rose-200/50 px-2 py-0.5 rounded">수정 1: 독자의 흥미 유발 (글의 제목)</span>
+                        <div class="grid grid-cols-2 gap-4 mt-2 text-xs">
+                            <div>
+                                <p class="text-slate-400">기존 초고 제목</p>
+                                <p class="font-bold text-slate-600 line-through">전통 음식 '너비아니'를 소개합니다.</p>
+                            </div>
+                            <div class="border-l border-rose-200 pl-4">
+                                <p class="text-emerald-600 font-semibold">고친 제목 (질문형 기법)</p>
+                                <p class="font-bold text-rose-700">은은한 전통의 맛, 너도 아니? 너비아니</p>
+                                <p class="text-[10px] text-slate-500 mt-1">※ 독자에게 호기심을 유도하는 질문을 던져 집중하게 함.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-rose-50 p-3.5 rounded-xl border border-rose-100">
+                        <span class="text-xs font-bold text-rose-800 bg-rose-200/50 px-2 py-0.5 rounded">수정 2: 자료의 무조건 활용 방지 (선별 능력)</span>
+                        <div class="mt-2 text-xs text-slate-600 space-y-1">
+                            <p class="font-semibold text-slate-800">서연이가 모은 자료 중 왜 활용하지 않은 자료가 있을까요?</p>
+                            <p class="pl-2">- 서연이는 '전통음식 활성화 대책 마련 인터뷰' 자료도 수집했었습니다.</p>
+                            <p class="pl-2">- 그러나 이 글은 너비아니를 <strong>소개하고 대중화하는 흥미 유발 설명문</strong>이기에, 다소 딱딱한 제도적 대책 마련 인터뷰는 글의 흐름에 어울리지 않는다고 판단하여 <strong>과감하게 제외(선별)</strong>하였습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-100 flex justify-end">
+                <button onclick="closeModal('modal-revise')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-xl text-sm transition">확인 완료</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for interaction -->
+    <script>
+        // Modal functions
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // prevent background scroll
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // restore scroll
+            }
+        }
+
+        // Close on escape key
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modals = ['modal-plan', 'modal-collect', 'modal-organize', 'modal-write', 'modal-revise'];
+                modals.forEach(closeModal);
+            }
+        });
+
+        // Close modal if user clicks outside of the modal body
+        window.onclick = function(event) {
+            const modals = ['modal-plan', 'modal-collect', 'modal-organize', 'modal-write', 'modal-revise'];
+            modals.forEach(mId => {
+                const modal = document.getElementById(mId);
+                if (event.target === modal) {
+                    closeModal(mId);
+                }
+            });
+        }
+
+        // Smooth Scroll
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // TAB Switching Logic
+        function switchQuizTab(tabName) {
+            const btnQuiz = document.getElementById('tab-btn-quiz');
+            const btnEvaluate = document.getElementById('tab-btn-evaluate');
+            const contentQuiz = document.getElementById('tab-content-quiz');
+            const contentEvaluate = document.getElementById('tab-content-evaluate');
+
+            if (tabName === 'quiz') {
+                // Active Quiz Tab
+                btnQuiz.className = "flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 bg-white text-slate-900 shadow";
+                btnEvaluate.className = "flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 text-slate-500 hover:text-slate-800";
+                contentQuiz.classList.remove('hidden');
+                contentEvaluate.classList.add('hidden');
+            } else {
+                // Active Evaluate Tab
+                btnEvaluate.className = "flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 bg-white text-slate-900 shadow";
+                btnQuiz.className = "flex-1 md:flex-initial px-4 py-2 text-sm font-bold rounded-lg transition duration-200 text-slate-500 hover:text-slate-800";
+                contentEvaluate.classList.remove('hidden');
+                contentQuiz.classList.add('hidden');
+            }
+        }
+
+        // Interactive Quiz Logic (Tab 1: 쪽지 시험)
+        function checkAnswer(questionNum, selectedAnswer) {
+            const feedback = document.getElementById(`feedback-${questionNum}`);
+            feedback.classList.remove('hidden');
+
+            if (questionNum === 1) {
+                const buttons = document.querySelectorAll('.q-btn-1');
+                buttons.forEach(btn => btn.disabled = true);
+                
+                if (selectedAnswer === 'O') {
+                    feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> 정답입니다!</span> 정보를 전달하는 설명문은 왜곡 없이 객관적인 사실 위주로 기록해야 하므로 개인적인 감상이나 주관을 담는 것은 적절하지 않습니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-emerald-600 mt-2";
+                } else {
+                    feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark"></i> 오답입니다.</span> 설명문은 주관을 배제하고 사실 중심으로 쓰는 대표적인 글입니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-rose-600 mt-2";
+                }
+            } else if (questionNum === 2) {
+                const buttons = document.querySelectorAll('.q-btn-2');
+                buttons.forEach(btn => btn.disabled = true);
+
+                if (selectedAnswer === 'B') {
+                    feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> 정답입니다! (②번)</span> 너비아니의 인지도가 낮다는 객관적인 설문 결과를 독자에게 알림으로써, 왜 학교 소식지에 이 글을 실어서 알려야 하는지에 대한 설득력과 흥미를 효과적으로 제시할 수 있습니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-emerald-600 mt-2";
+                } else {
+                    feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark"></i> 오답입니다.</span> 설문지 수치는 이 글을 쓰는 까닭과 의의를 밝혀 독자의 호기심을 모으기 위한 정보에 속합니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-rose-600 mt-2";
+                }
+            } else if (questionNum === 3) {
+                const buttons = document.querySelectorAll('.q-btn-3');
+                buttons.forEach(btn => btn.disabled = true);
+
+                if (selectedAnswer === 'O') {
+                    feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> 정답입니다!</span> 글쓰기는 항상 일방향적인 것이 아니며 필요 시 언제든 앞 단계로 되돌아가 내용 조직을 가다듬거나 추가 정보를 탐색할 수 있습니다. 이를 글쓰기의 '회귀성'이라고 합니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-emerald-600 mt-2";
+                } else {
+                    feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark"></i> 오답입니다.</span> 부족한 내용이나 흐름이 생기면 언제든지 계획, 수집 단계로 돌아가 조율할 수 있습니다.`;
+                    feedback.className = "text-sm pl-8 font-semibold text-rose-600 mt-2";
+                }
+            }
+        }
+
+        // Interactive Assessment Logic (Tab 2: 소단원 평가 10문항)
+        function checkEvalAnswer(questionNum, selectedOption) {
+            const feedback = document.getElementById(`eval-feedback-${questionNum}`);
+            feedback.classList.remove('hidden');
+
+            // Disable buttons for this question
+            const buttons = document.querySelectorAll(`.eval-btn-${questionNum}`);
+            buttons.forEach(btn => btn.disabled = true);
+
+            // Correct Key Mapping
+            const correctKeys = {
+                1: 'C',
+                2: 'A',
+                3: 'B',
+                4: 'C',
+                5: 'D',
+                6: 'B',
+                7: 'C',
+                8: 'A',
+                9: 'B',
+                10: 'C'
+            };
+
+            // Explanations for correct/incorrect answers
+            const explanations = {
+                1: {
+                    correct: "정답입니다! 글쓴이의 사적인 인간관계나 개인적 성격은 정보 전달이라는 글쓰기 계획 단계에서 설정해야 할 필수 요소(목적, 독자, 주제, 종류)에 부합하지 않습니다.",
+                    incorrect: "틀렸습니다. 계획 단계에서는 '목적, 독자, 주제, 매체, 종류'를 기획해야 하며, 글쓴이의 성격 등 주관적인 배경은 필요 요소가 아닙니다."
+                },
+                2: {
+                    correct: "정답입니다! 서연이의 글은 '너비아니'라는 특정 한식을 맛있게 소개하고 대중화하는 흥미 유발 설명문이므로, 제도적인 대책 마련 인터뷰는 글의 주제와 직접 연관성이 멀어 선별적으로 제외하는 것이 맞습니다.",
+                    incorrect: "틀렸습니다. 수집한 모든 자료를 기계적으로 전부 다 활용하는 것은 좋은 설명문이 아닙니다. 주제에 직간접적으로 관련성이 깊은 자료만 효과적으로 선별해야 합니다."
+                },
+                3: {
+                    correct: "정답입니다! 글을 체계적이고 짜임새 있게 작성하기 위해 처음-중간-끝에 배치할 항목들을 한눈에 조직화해 보여주는 것을 '개요표'라고 부릅니다.",
+                    incorrect: "틀렸습니다. 설계 역할을 수행하는 간결하고 구조화된 초안 뼈대는 '개요표'입니다."
+                },
+                4: {
+                    correct: "정답입니다! 설명문은 무엇보다 객관적인 사실에 입각하여 독자의 신뢰를 확보하는 것이 가장 최우선되는 갈래적 특징입니다.",
+                    incorrect: "틀렸습니다. 설명하는 글은 주관적인 화려함이나 비검증 정서, 독자 혼란을 초래하는 신조어 등을 철저히 지양해야 합니다."
+                },
+                5: {
+                    correct: "정답입니다! 너비아니의 유래, 순서, 대중성 등은 객관적으로 증명 가능한 설명문의 핵심 내용이지만, 다른 양식 스테이크 맛과의 감상적인 비평 비교 등은 초고에 포함되지 않았습니다.",
+                    incorrect: "틀렸습니다. 서연이는 너비아니의 역사, 조리과정, 영양과 대중성을 설명했으나 타 양식 스테이크와 맛 시식 평가를 비교하지는 않았습니다."
+                },
+                6: {
+                    correct: "정답입니다! 다른 사람의 지식재산을 정직하게 밝히고 글의 타당성과 객관성 신뢰도를 독자에게 확보해주기 위해 출처 명시가 필수적입니다.",
+                    incorrect: "틀렸습니다. 출처를 밝히는 까닭은 단순한 분량 채우기나 형식적 절차가 아닌, 지식재산 보호와 과학적 정보 타당성 획득입니다."
+                },
+                7: {
+                    correct: "정답입니다! 밋밋한 설명형 제목보다 '너도 아니? 너비아니'처럼 재미있는 말장난(언어유희)과 흥미를 끄는 호기심 질문을 융합하여 독자의 독서 욕구를 극대화할 수 있습니다.",
+                    incorrect: "틀렸습니다. 질문형 구성과 한식 명칭을 결합하여 가독성과 읽는 재미를 주기 위한 국어적인 고쳐쓰기 전략입니다."
+                },
+                8: {
+                    correct: "정답입니다! 줄글로만 길게 구성되면 쉽게 지루하고 복잡해질 요리 방법이나 인지도 수치 등을 영상, 표 자료와 융합함으로써 독자의 실시간 입체 이해를 극대화해 줍니다.",
+                    incorrect: "틀렸습니다. 글과 시각 자료가 서로의 한계를 보완해 주어야 독자가 대상을 다각도로 쉽게 파악할 수 있는 시너지가 생깁니다."
+                },
+                9: {
+                    correct: "정답입니다! 글쓰기는 한 번에 일방적으로 끝내는 것이 아니며 오류를 고치거나 더 나은 보강을 위해 앞단계로 되돌아가며 완성해 나가는 '회귀성' 특징이 있습니다.",
+                    incorrect: "틀렸습니다. 필요한 경우 자료 수집, 내용 개요 기획 등 앞선 단계로 다시 돌아가 유기적으로 보완해 가는 특징을 '회귀성'이라고 합니다."
+                },
+                10: {
+                    correct: "정답입니다! 글의 마지막 부분은 유기적인 요약과 한식의 소중한 당부, 참고 문헌 등을 제공하며 갈무리하는 곳으로, 뜬금없는 서양 치즈 권장은 글의 일관성에 어긋납니다.",
+                    incorrect: "틀렸습니다. 설명문의 '끝' 부분은 글을 정리하고 가치를 재확인하며 출처를 기입하는 핵심적 역할을 해야 어울립니다."
+                }
+            };
+
+            const isCorrect = (selectedOption === correctKeys[questionNum]);
+            if (isCorrect) {
+                feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check"></i> 정답입니다!</span><br><span class="text-xs text-slate-600 mt-1 block">${explanations[questionNum].correct}</span>`;
+                feedback.className = "text-sm pl-8 font-semibold text-emerald-600 mt-2";
+            } else {
+                feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark"></i> 오답입니다.</span><br><span class="text-xs text-slate-600 mt-1 block">${explanations[questionNum].incorrect}</span>`;
+                feedback.className = "text-sm pl-8 font-semibold text-rose-600 mt-2";
+            }
+        }
+    </script>
+</body>
+</html>
